@@ -8,3 +8,4 @@ class Links(models.Model):
     identifier = models.SlugField(blank=True, unique=True)
     author = get_user_model()
     active = models.BooleanField(default=True)
+    created_date = models.DateTimeField()
