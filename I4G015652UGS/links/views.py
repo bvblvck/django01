@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from rest_framework import generics
 from rest_framework.permissions import IsAdminUser
+from links.models import Links
+from links.serializers import LinkSerializer
 
 
 class PostListApi(generics.ListAPIView):
