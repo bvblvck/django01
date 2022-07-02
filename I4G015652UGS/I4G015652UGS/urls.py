@@ -21,4 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/links/", include("links.urls")),
     path("create/", views.PostCreateApi.as_view(), name="api_create"),
+    path("update/", views.PostUpdateApi.as_view(), name="api_update"),
+    path("delete/", views.PostDeleteApi.as_view(), name="api_delete"),
+    path("", views.PostListApi.as_view(), name="api_list"),
 ]
